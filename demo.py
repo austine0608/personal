@@ -30,7 +30,17 @@ score = accuracy_score(y_test,predictions)
 
 score
 
-st.subheader('Hands On: Try To Make Your Pridiction')
+st.markdown("""
+            <html>
+                This Data Driven application 
+                allows you to select your age 
+                and your gender then it tells 
+                you which genre of music is 
+                suitable for you
+            </html>
+            """, unsafe_allow_html=True)
+
+st.subheader('Select Your Age & Determin Your Genre Of Music')
 age = st.slider('Select Your Age Range',10,70,18)
 gender = st.selectbox('Pick Your Gender',options=['Male','Female'])
 gender_code = 1 if gender == 'Male' else 0
