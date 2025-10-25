@@ -5,6 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split 
 from sklearn.metrics import accuracy_score 
 
+st.set_page_config(page_title="Lotus-Gold Consulting", layout="wide")
 st.title('Lotus-Gold Consulting')
 st.markdown('---')
 st.image('11.jpg')
